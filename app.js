@@ -57,3 +57,37 @@ var value = "472"
 var newvalue = 472
 console.log("Value", typeof value )
 console.log( "Value",typeof newvalue)
+
+// Q 10
+var user_input = prompt("Enter your Country name")
+var upperCase = user_input.toUpperCase()
+console.log("User Input" ,user_input)
+console.log( "Upper Case", upperCase)
+
+// Q 11
+
+var  user_input1 = prompt( "Enter Your City Name")
+var firstChar = user_input1.slice(0,1).toUpperCase()
+var moreChar = user_input1.slice(1).toLowerCase()
+console.log("User Input", user_input1)
+console.log( "Title Case", firstChar+moreChar )
+
+// Q 12
+
+var num = 35.36;
+var string =num.toString().replace("." ,"");
+console.log( "Number",num);
+console.log("String",string);
+
+// Q 13
+ 
+var userNameInput = prompt( "Enter a User Name");
+var specailChar = ["@",",",".","!"];
+
+for(var i = 0 ;i<userNameInput.length;i++){
+    if(userNameInput.slice(i,i+1) === "@" ||","||"."||"!") {
+       console.log( "Please Enter a Valid User Name");
+       break;
+    }
+
+}
